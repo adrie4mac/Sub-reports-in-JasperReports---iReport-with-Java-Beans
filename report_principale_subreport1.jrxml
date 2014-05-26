@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_principale_subreport1" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7c33a824-69a7-48d7-84bc-c492f21872bd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="day" class="java.lang.String">
+		<fieldDescription><![CDATA[day]]></fieldDescription>
+	</field>
+	<field name="evening" class="java.lang.String">
+		<fieldDescription><![CDATA[evening]]></fieldDescription>
+	</field>
+	<field name="month" class="java.lang.String">
+		<fieldDescription><![CDATA[month]]></fieldDescription>
+	</field>
+	<field name="morning" class="java.lang.String">
+		<fieldDescription><![CDATA[morning]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[year]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4e38f379-1ea0-4c68-b993-668a9f59c58e" x="53" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="00bbcae2-a06a-4dba-8aa2-c8f4ac7c907f" x="61" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[evening]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f4a3ebb4-0d3d-4cb1-8922-93acf6058658" x="75" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13d8f2dc-b8c2-42a6-99d4-09bbe3fe7ebd" x="276" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[morning]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2474f36a-cb86-4b30-bd74-906881912613" x="296" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[year]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="9df5b6a1-5434-42a4-ac12-7796a5ac55fa" x="53" y="21" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2ee66560-3717-436d-be8b-d94dea80bfa2" x="61" y="58" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{evening}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="54196828-014c-41dd-901d-9c5882f29f7f" x="75" y="91" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e0a91d3c-882d-4605-ba42-c8518ac2b086" x="276" y="33" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{morning}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="632d4211-a895-4609-8ccd-ad716dacf18e" x="296" y="87" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
