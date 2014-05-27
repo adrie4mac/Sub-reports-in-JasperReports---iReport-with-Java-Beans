@@ -12,3 +12,7 @@ Create 3 different jars:
 These are the link where I find the inspiration:
 http://www.richardnichols.net/2010/02/simple-guide-to-sub-reports-in-jasperreports-ireport/
 http://1010111chen.wordpress.com/2010/05/19/ireport-tutorial-using-javabean-datasource/
+
+
+Common error:
+If throws this exception: "Error filling print... Error retrieving field value from bean : esempioCampo"
